@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Transportation - Kingster Kids</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bus.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="mailto:contact@KingsterKids.edu"><i class="fas fa-envelope"></i> contact@KingsterKids.edu</a>
+                        <a href="tel:+1-3435-2356-222"><i class="fas fa-phone"></i> +1-3435-2356-222</a>
+                    </div>
+                    <div class="col-md-6 text-end">
+                        <a href="#" class="btn btn-sm btn-outline-light">Support KU</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="img/logo-kindergarten.png" alt="Kingster Kids"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Admission.html">Admissions</a></li>
+                        <li class="nav-item"><a class="nav-link" href="course.html">Courses</a></li>
+                        <li class="nav-item"><a class="nav-link" href="result.html">Results</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Resources
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
+                                <li><a class="dropdown-item" href="academics.html">Academics</a></li>
+                                <li><a class="dropdown-item" href="attendance.html">Attendance</a></li>
+                                <li><a class="dropdown-item" href="library.html">Library</a></li>
+                                <li><a class="dropdown-item" href="Hostel.html">Hostel</a></li>
+                                <li><a class="dropdown-item" href="info.html">Student Information</a></li>
+                                <li><a class="dropdown-item active" href="bus.html">Bus Transportation</a></li>
+                                <li><a class="dropdown-item" href="Communication.html">Communication</a></li>
+                                <li><a class="dropdown-item" href="fee-submission.html">Fee Submission</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="school-life.html">School Life</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contactus.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 data-aos="fade-up">Bus Transportation</h1>
+                <p class="lead" data-aos="fade-up" data-aos-delay="200">Safe and convenient transportation for our students</p>
+            </div>
+        </section>
+
+        <div class="container mt-5">
+            <section class="mb-5" data-aos="fade-up">
+                <h2 class="section-title">Bus Routes</h2>
+                <div class="row" id="routesList">
+                    <div class="col-md-6 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Route 1</h5>
+                                <p class="card-text">GOMTI NAGAR, LULU, TRANSPORT NAGAR, AIRPORT</p>
+                                <a href="#" class="btn btn-primary view-route">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Route 2</h5>
+                                <p class="card-text">CHARBAGH, BBD, CHINNHAT, ALAMBAGH</p>
+                                <a href="#" class="btn btn-primary view-route">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-5" data-aos="fade-up">
+                <h2 class="section-title">Bus Schedules</h2>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Route</th>
+                                <th>Morning Pickup</th>
+                                <th>Afternoon Drop-off</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Route 1</td>
+                                <td>7:00 AM</td>
+                                <td>3:30 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Route 2</td>
+                                <td>7:30 AM</td>
+                                <td>4:00 PM</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="mb-5" data-aos="fade-up">
+                <h2 class="section-title">Student Transportation Registration</h2>
+                <form id="transportationForm">
+                    <div class="mb-3">
+                        <label for="student-name" class="form-label">Student Name:</label>
+                        <input type="text" id="student-name" name="student-name" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="route" class="form-label">Bus Route:</label>
+                        <select id="route" name="route" class="form-select">
+                            <option value="">Select a route</option>
+                            <option value="Route 1">Route 1</option>
+                            <option value="Route 2">Route 2</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </section>
+
+            <section class="mb-5" data-aos="fade-up">
+                <h2 class="section-title">Student Transportation Records</h2>
+                <div class="table-responsive">
+                    <table class="table table-striped" id="transportationTable">
+                        <thead>
+                            <tr>
+                                <th>Student Name</th>
+                                <th>Bus Route</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-light">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p>Box 35300<br>1810 Campus Way NE<br>Bothell, WA 98011-8246</p>
+                    <p>Phone: +1-2534-4456-345<br>Email: admin@kingsteruni.edu</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="Admission.html">Admissions</a></li>
+                        <li><a href="course.html">Courses</a></li>
+                        <li><a href="result.html">Results</a></li>
+                        <li><a href="school-life.html">School Life</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-secondary py-2">
+            <div class="container text-center">
+                <small>&copy; 2024 Kingster Kids. All rights reserved.</small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="bus.js"></script>
+</body>
+</html>
