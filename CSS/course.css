@@ -1,0 +1,119 @@
+:root {
+  --primary-color: #4a90e2;
+  --secondary-color: #f39c12;
+  --accent-color: #e74c3c;
+  --text-color: #333;
+  --bg-color: #fff;
+  --header-bg: #f8f9fa;
+  --footer-bg: #2c3e50;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+.header-top {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 5px 0;
+}
+
+.header-top a {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 0.9rem;
+}
+
+.header-top .support-btn {
+  color: white;
+  border-color: white;
+}
+
+.header-top .support-btn:hover {
+  background-color: white;
+  color: var(--primary-color);
+}
+
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.navbar-brand img {
+  height: 50px;
+}
+
+.navbar-nav .nav-link {
+  padding: 25px 15px;
+}
+
+.dropdown-menu {
+  border: none;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.dropdown-item {
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/play.png);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 150px 0;
+}
+
+.course-card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.course-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.course-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.course-card .card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.course-card .btn {
+  margin-top: auto;
+}
+
+footer {
+  background-color: var(--footer-bg);
+  color: white;
+  padding: 50px 0;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1.5rem;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: var(--secondary-color);
+}
